@@ -1,11 +1,13 @@
 .searchBar {
   display: flex;
-  max-width: 800px;
+  max-width: 880px;
+  justify-content: baseline;
   width: 100%;
 }
 
 .navFlex {
   display: flex;
+  justify-content: baseline;
 }
 
 .fa {
@@ -14,8 +16,12 @@
 }
 
 input {
-  margin-left: 30px;
+  margin-left: 60px;
+  width: 300px;
+  height: 40px;
+  text-align: center;
 }
-.navFlex h3 {
-  font-size: 30px;
+#header {
+  font-size: 20px;
+  margin-left: 30px;
 }

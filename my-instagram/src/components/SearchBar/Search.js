@@ -1,31 +1,31 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Search.css";
 
 const Search = () => {
   return (
     <div className="searchBar">
-      <section class="navFlex">
+      <section className="navFlex">
         <p>
           {" "}
-          <i class="fa fa-instagram" />
+          <i className="fa fa-instagram" />
         </p>
         <p>
-          <i class="fa fa-arrows-v" />
+          <i className="fa fa-arrows-v" />
         </p>
-        <p>Instagram</p>
+        <h3 id="header">Instagram</h3>
       </section>
       <section>
         <input type="text" placeholder="Search.." />
       </section>
-      <section class="navFlex">
+      <section className="navFlex flex2">
         <p>
-          <i class="fa fa-universal-access" />
+          <i className="fa fa-universal-access" />
         </p>
         <p>
-          <i class="fa fa-heart-o" />
+          <i className="fa fa-heart-o" />
         </p>
         <p>
-          <i class="fa fa-user-o" />
+          <i className="fa fa-user-o" />
         </p>
       </section>
     </div>
