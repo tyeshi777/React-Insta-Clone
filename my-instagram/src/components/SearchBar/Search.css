@@ -1,0 +1,21 @@
+.searchBar {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+}
+
+.navFlex {
+  display: flex;
+}
+
+.fa {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+input {
+  margin-left: 30px;
+}
+.navFlex h3 {
+  font-size: 30px;
+}
