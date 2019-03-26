@@ -1,13 +1,12 @@
 import React from "react";
 import "./Comment.css";
 
-const Comment = props => {
-  console.log("comment", props);
+function Comment(props) {
   return (
-    <div>
-      <Comment comm={props.comm} />
-    </div>
+    <>
+      {props.dummyData.map(item => (
+        <Comment key={item.id} comment={item.comment} />
+      ))}
+    </>
   );
-};
-
-export default Comment;
+}

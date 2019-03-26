@@ -2,24 +2,22 @@ import React, { Component } from "react";
 import "./App.css";
 import dummyData from "./dummy-data";
 import SearchBar from "./components/SearchBar/Search";
-import Post from "./components/PostContainer/Post";
-import Comment from "./components/CommentSection/Comment";
+import Posts from "./components/PostContainer/Posts";
 
 class App extends Component {
-  state = {
-    dummyData
-  };
+  constructor() {
+    super();
+    this.state = {
+      dummyData
+    };
+  }
 
   render() {
-    // console.log(this.state);
+    // console.log("state", this.state.dummyData);
     return (
       <div className="App">
         <SearchBar />
-        {this.state.dummyData.map((post, i) => (
-          <Post key={i} post={post} />
-        ))}
-        {this.state.comment &&
-          this.state.comment.map((comm, i) => <Comment key={i} comm={comm} />)}
+        <Posts dummyData={this.state.dummyData} />
       </div>
     );
   }
