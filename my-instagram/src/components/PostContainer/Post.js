@@ -2,9 +2,9 @@ import React from "react";
 import "./Post.css";
 
 const Post = props => {
-  console.log("Post", props);
+  // console.log("Post", props);
   return (
-    <div>
+    <div className="mainDiv">
       <div className="headers">
         <section>
           <img src={props.thumbnailUrl} alt="thumbnail" />
@@ -14,6 +14,9 @@ const Post = props => {
         </section>
       </div>
       <img src={props.imageUrl} alt="img" />
+      <p>
+        <i className="fa fa-heart-o" /> <i className="fa fa-comment-o" />
+      </p>
     </div>
   );
 };

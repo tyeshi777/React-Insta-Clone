@@ -1,7 +1,7 @@
 import React from "react";
 import "./Search.css";
 
-const Search = () => {
+const Search = props => {
   return (
     <div className="searchBar">
       <section className="navFlex">
@@ -9,13 +9,15 @@ const Search = () => {
           {" "}
           <i className="fa fa-instagram" />
         </p>
-        <p>
-          <i className="fa fa-arrows-v" />
-        </p>
+        <div className="pLine" />
         <h3 id="header">Instagram</h3>
       </section>
       <section>
-        <input type="text" placeholder="Search.." />
+        <input
+          type="text"
+          placeholder="Search... "
+          onKeyDown={props.searchPost}
+        />
       </section>
       <section className="navFlex flex2">
         <p>

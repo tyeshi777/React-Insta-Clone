@@ -5,11 +5,15 @@
 }
 .headers {
   display: flex;
-  margin: 20px 0;
+  margin: 2% 0;
 }
 .header4 {
-  margin-left: 20px;
+  margin-left: 6%;
 }
 .faFlex {
   display: flex;
+}
+
+.mainDiv {
+  margin-left: 10%;
 }

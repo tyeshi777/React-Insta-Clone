@@ -1,12 +1,14 @@
 import React from "react";
 import "./Comment.css";
 
-function Comment(props) {
+const Comment = props => {
   return (
-    <>
-      {props.dummyData.map(item => (
-        <Comment key={item.id} comment={item.comment} />
-      ))}
-    </>
+    <div>
+      <span>{props.comment.username}</span>
+      <span>{props.comment.text}</span>
+      <input type="text" placeholder="add comment..." />
+    </div>
   );
-}
+};
+
+export default Comment;

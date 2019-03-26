@@ -1,8 +1,8 @@
 import React from "react";
 import Post from "./Post";
 
-function Posts(props) {
-  console.log("props", props.dummyData);
+function PostRender(props) {
+  // console.log("props", props.dummyData);
   return (
     <>
       {props.dummyData.map(prop => (
@@ -17,4 +17,4 @@ function Posts(props) {
   );
 }
 
-export default Posts;
+export default PostRender;
