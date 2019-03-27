@@ -13,11 +13,7 @@ const Search = props => {
         <h3 id="header">Instagram</h3>
       </section>
       <section>
-        <input
-          type="text"
-          placeholder="Search... "
-          onKeyDown={props.searchPost}
-        />
+        <input type="text" placeholder="Search... " />
       </section>
       <section className="navFlex flex2">
         <p>

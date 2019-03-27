@@ -12,8 +12,13 @@
 }
 .faFlex {
   display: flex;
+  margin: 10px 0 10px 60px;
 }
 
 .mainDiv {
   margin-left: 10%;
+}
+
+.likesCount {
+  margin: 10px 0 10px 90px;
 }
