@@ -25,12 +25,12 @@ class CommentSec extends Component {
   };
 
   render() {
-    // console.log(this.props.comments);
     return (
       <div>
-        {this.state.comments.map((comment, index) => (
-          <Comment key={index} comment={comment} />
-        ))}
+        {this.state.comments &&
+          this.state.comments.map((comment, index) => (
+            <Comment key={index} comment={comment} />
+          ))}
         <CommentInput
           newComment={this.state.newComment}
           onComment={this.commentHandler}

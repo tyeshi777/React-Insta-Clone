@@ -2,6 +2,7 @@ import React from "react";
 import "./Search.css";
 
 const Search = props => {
+  // console.log(props);
   return (
     <div className="searchBar">
       <section className="navFlex">
@@ -13,7 +14,12 @@ const Search = props => {
         <h3 id="header">Instagram</h3>
       </section>
       <section>
-        <input type="text" placeholder="Search... " />
+        <input
+          type="text"
+          placeholder="Search... "
+          onChange={props.onSearch}
+          value={props.term}
+        />
       </section>
       <section className="navFlex flex2">
         <p>
