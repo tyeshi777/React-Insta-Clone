@@ -5,11 +5,6 @@ import LikeSection from "./LikeSection";
 import SearchBar from "../SearchBar/Search";
 import dummyData from "../../dummy-data";
 
-function searchFor(term) {
-  return function(x) {
-    return x.username.includes(term) || !term;
-  };
-}
 class PostRender extends React.Component {
   constructor() {
     super();

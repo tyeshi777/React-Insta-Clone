@@ -19,7 +19,7 @@ class CommentSec extends Component {
   handleCommentSubmit = event => {
     event.preventDefault();
     const copiedComment = { text: this.state.newComment, username: "tenzing" };
-    let comments = this.state.comments.slice();
+    let comments = [...this.state.comments];
     comments.push(copiedComment);
     this.setState({ comments: [...comments], newComment: "" });
   };

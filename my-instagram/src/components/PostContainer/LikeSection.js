@@ -1,5 +1,4 @@
 import React from "react";
-
 const LikeSection = props => {
   // console.log("like", props.liked);
   return (

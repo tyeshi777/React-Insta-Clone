@@ -1,28 +1,21 @@
 import React, { Component } from "react";
 import "./App.css";
 import PostRender from "./components/PostContainer/PostRender";
-import Login from "./components/LoginPage/Login";
-import authenticate from "./components/Authenticate/authenticate.js";
-
-const ConditionalRender = authenticate(Login)(PostRender);
+import Authenticate from "./components/Authenticator/Authenticate";
 
 class App extends Component {
-  state = {
-    users: "",
-    password: ""
-  };
-
-  loginHandler = event => {
-    this.setState({ users: event.target.value });
-  };
+  constructor() {
+    super();
+    this.state = {};
+  }
 
   render() {
     return (
       <div className="App">
-        <ConditionalRender />
+        <PostRender />
       </div>
     );
   }
 }
 
-export default App;
+export default Authenticate(App);
